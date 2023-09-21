@@ -1,5 +1,6 @@
 require "sidekiq"
 require "sidekiq/web"
+require "sidekiq-failures"
 require "securerandom"
 
 use Rack::Auth::Basic, "Restricted Area" do |username, password|

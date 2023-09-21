@@ -5,3 +5,5 @@ gem "rack"
 gem "sidekiq"
 gem "sinatra"
 gem "puma"
+
+gem "sidekiq-failures", "~> 1.0"

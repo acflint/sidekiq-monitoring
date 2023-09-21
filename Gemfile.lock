@@ -19,6 +19,8 @@ GEM
       connection_pool (>= 2.3.0)
       rack (>= 2.2.4)
       redis-client (>= 0.14.0)
+    sidekiq-failures (1.0.4)
+      sidekiq (>= 4.0.0)
     sinatra (3.1.0)
       mustermann (~> 3.0)
       rack (~> 2.2, >= 2.2.4)
@@ -34,6 +36,7 @@ DEPENDENCIES
   puma
   rack
   sidekiq
+  sidekiq-failures (~> 1.0)
   sinatra
 
 RUBY VERSION
