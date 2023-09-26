@@ -8,7 +8,7 @@ use Rack::Auth::Basic, "Restricted Area" do |username, password|
 end
 
 Sidekiq.configure_client do |config|
-  config.redis = {url: ENV["REDIS_URL"]}
+  config.redis = {url: ENV["REDIS_URL"], ssl_params: {verify_mode: OpenSSL::SSL::VERIFY_NONE}}
 end
 
 secret_key = SecureRandom.hex(32)
